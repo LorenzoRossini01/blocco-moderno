@@ -1,0 +1,101 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* UTILS */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.debug {
+  min-height: 80px;
+  background-color: lightgray;
+  padding: 2rem;
+}
+
+header {
+  height: 100px;
+  line-height: 100px;
+  width: 100%;
+  z-index: 1;
+
+  position: fixed;
+  background-color: #ffffff75;
+}
+
+header li:hover {
+  /* border-bottom: 10px solid black; */
+  box-shadow: 0 5px 0 0 black;
+  cursor: pointer;
+}
+header li:active {
+  box-shadow: 0 5px 0 0 orange;
+
+  /* border-bottom: 10px solid lime; */
+  cursor: pointer;
+}
+
+/* SECTION */
+#roma {
+  background-image: url(https://www.turismoroma.it/sites/default/files/Roma%20in%20breve.jpg);
+}
+
+#napoli {
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/napoli-1653914862.png);
+}
+
+#milano {
+  background-image: url(https://www.turistafaidate.it/wp-content/uploads/2020/03/duomo-milano-194644012015.jpg);
+}
+
+section {
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section .layover {
+  height: 100%;
+  backdrop-filter: brightness(0.5) blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h1 {
+  font-size: 15rem;
+  color: white;
+  opacity: 0;
+}
+
+section:hover h1 {
+  opacity: 1;
+}
